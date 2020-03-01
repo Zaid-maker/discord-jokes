@@ -1,6 +1,6 @@
 {
-  "name": "give-me-a-joke-rewrite",
-  "version": "1.0.0",
+  "name": "discord-jokes",
+  "version": "1.0.4",
   "description": "This is package used to get jokes.",
   "main": "index.js",
   "scripts": {
