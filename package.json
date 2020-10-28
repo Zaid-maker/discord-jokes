@@ -1,12 +1,27 @@
 {
   "name": "discord-jokes",
-  "version": "1.0.8",
+  "version": "3.0.0",
   "description": "This is package used to get jokes.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "DevMirza",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zaid-maker/discord-jokes.git"
+  },
+  "author": "devmitza",
+  "keywords": [
+    "discord",
+    "bot",
+    "music",
+    "dash",
+    "cli",
+    "jokes",
+    "dad",
+    "discord.js",
+    "chalk"
+  ],
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
