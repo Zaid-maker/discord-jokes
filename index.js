@@ -3,7 +3,7 @@ var bodyParser = require('body-parser');
 var request = require('request');
 
 var app = express();
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: false }));
 
 exports.getRandomCNJoke = function (joke) {
     request('http://api.icndb.com/jokes/random?limitTo=[nerdy]', function (error, response, body) {
@@ -38,4 +38,25 @@ exports.getRandomDadJoke = function (joke) {
             joke(dataJSON.joke);
         }
     });   
+}
+
+exports.getRandomJokeOfTheDay = function (category, joke) {
+    let query = ''
+    if (category)
+        query += `?category=${category}`
+
+    var options = {
+        url: `https://api.jokes.one/jod${query}`,
+        headers: {
+            'Content-type': 'application/json'
+        }
+    };
+    request(options, function (error, response, body) {
+        if (!error && response.statusCode === 200) {
+            var dataJSON = JSON.parse(body);
+            joke(dataJSON.contents.jokes[0].joke.text);
+        } else {
+            throw error
+        }
+    });
 }
