@@ -34,12 +34,14 @@ exports.getRandomDadJoke = function (joke) {
       Accept: "application/json",
     },
   };
-  request(options, (error, response, body) => {
-    if (!error && response.statusCode === 200) {
-      const dataJSON = JSON.parse(body);
+  axios(options)
+    .then((response) => {
+      const dataJSON = response.data;
       joke(dataJSON.joke);
-    }
-  });
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 };
 
 exports.getRandomJokeOfTheDay = (category, joke) => {
