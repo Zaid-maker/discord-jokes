@@ -1,6 +1,6 @@
 {
   "name": "discord-jokes",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "This is package used to get jokes.",
   "main": "index.js",
   "scripts": {
