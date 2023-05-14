@@ -1,5 +1,4 @@
 const axios = require("axios");
-const request = require("request");
 
 exports.getRandomCNJoke = (joke) => {
   axios
