@@ -7,6 +7,7 @@ This is an npm module to get random and customized jokes.
 ![](https://img.shields.io/npm/dw/discord-jokes)
 ![](https://img.shields.io/npm/collaborators/discord-jokes)
 ![](https://img.shields.io/npm/l/discord-jokes)
+[![Socket Badge](https://socket.dev/api/badge/npm/package/discord-jokes)](https://socket.dev/npm/package/discord-jokes)
 
 
 ## License
