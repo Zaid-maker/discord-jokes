@@ -22,7 +22,7 @@
     "discord.js",
     "chalk"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.27.2"
   }
